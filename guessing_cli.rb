@@ -2,7 +2,7 @@ def run_guessing_game
   guess = ""
   correct_answer = (1 + rand(6)).to_s 
   
-  while correct_answer != guess
+  while correct_answer != guess || guess == "exit"
     puts "Guess a number between 1 and 6."
     guess = gets.chomp
     case guess 
