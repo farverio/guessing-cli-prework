@@ -1,10 +1,10 @@
 def run_guessing_game
-  
-  puts "Guess a number between 1 and 6."
-  guess = gets.chomp
+  guess = ""
   correct_answer = 1 + rand(6) 
   
   while correct_answer != guess
+    puts "Guess a number between 1 and 6."
+    guess = gets.chomp
     case guess 
       when "exit"
         exit_game
