@@ -1,6 +1,6 @@
 def run_guessing_game
   guess = ""
-  correct_answer = 1 + rand(6) 
+  correct_answer = (1 + rand(6)).to_s 
   
   while correct_answer != guess
     puts "Guess a number between 1 and 6."
@@ -14,7 +14,7 @@ def run_guessing_game
     end
   end
   
-  if guess.to_i == correct_answer
+  if guess == correct_answer
     puts "You guessed the correct number!"
   end
 end
