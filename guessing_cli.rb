@@ -10,7 +10,7 @@ def run_guessing_game
         exit_game
       else
         puts "The computer guessed #{guess}"
-        puts correct_answer
+        puts correct_answer == guess
     end
   end
   
