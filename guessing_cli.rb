@@ -14,7 +14,7 @@ def run_guessing_game
     end
   end
   
-  if guess == correct_answer
+  if guess.to_i == correct_answer
     puts "You guessed the correct number!"
   end
 end
